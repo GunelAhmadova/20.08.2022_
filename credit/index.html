@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="stylesheet" href="assets/css/main.css"> 
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>  
+    <div class="container">
+        <h2>Hesablama Mərkəzi</h2>
+        <div class="row">
+            <div class="col-md-2 amount"> 
+                <p>Mehsulun Qiymeti</p>
+                <input class="inp" type="number" name="amount" min="100" max="20000" onchange="Calculate()" id="amount">
+            </div>
+            <div class="col-md-2 month">
+            <p>Ayliq Faiz</p>
+
+                <input class="inp" type="number" name="rate" onchange="Calculate()" id="interest_rate">
+            </div>
+            <div class="col-md-2 percent"> 
+                <p>Ay</p>
+                <input class="inp" type="number" name="month"  onchange="Calculate()" id="months">
+            </div>
+            <div class="col-md-3 my-4">
+                <button class=" btnCount btn btn-danger">Hesabla</button>
+                <button class=" btnDelete btn btn-primary">Temizle</button>
+            </div> 
+        </div>  
+        <h2 id="payment"></h2>  
+        <h2 id="total"></h2>  
+
+        <ul class="list-payment">
+
+        </ul>
+    </div>
+
+    
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
